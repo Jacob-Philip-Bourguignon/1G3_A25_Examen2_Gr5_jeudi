@@ -3,6 +3,31 @@ from debogage_mot_long import mot_plus_long, pourcentage_mots_max  # Remplacer p
 # ============================
 # Tests pour mot_plus_long
 # ============================
+def test_mot_plus_long_plus_long():
+    liste_mots = ["banane", "fraise", "chien", "framboise"]
+    resultat = mot_plus_long(liste_mots)
+    assert resultat == "framboise"
+
+def test_mot_plus_long_tout_egal():
+    liste_mots = ["banane", "fraise", "taille", "projet"]
+    resultat = mot_plus_long(liste_mots)
+    assert resultat == "banane"
+
+def test_mot_plus_long_tous_numero():
+    liste_mots = [25, 42]
+    resultat = mot_plus_long(liste_mots)
+    assert resultat is None
+
+def test_mot_plus_long_liste_vide():
+    liste_mots = []
+    resultat = mot_plus_long(liste_mots)
+    assert resultat is None
+
+def test_mot_plus_long_un_numero():
+    liste_mots = [76, "girafe", "poney", "montagne"]
+    resultat = mot_plus_long(liste_mots)
+    assert resultat == "montagne"
+
 # TODO: Tests unitaires pour la fonction mot_plus_long (maximum 5 différents)
 
 # ============================
@@ -19,8 +44,11 @@ def test_pourcentage_mots_max_tous_superieur():
     Lorsque tous les mots présents dépassent la taille,
     le pourcentage retourné est 100%.
     """
+    mots = ["poney", "girafe", "hippopotame", "chaton"]
+    resultat = pourcentage_mots_max(mots, 1)
+    assert resultat == 100.0
     # TODO: Complèter ce test unitaire.
-    assert False
+
 
 def test_pourcentage_mots_max_elements_invalides():
     mots = ["pamplemousse", 42, "cacahuète", None]

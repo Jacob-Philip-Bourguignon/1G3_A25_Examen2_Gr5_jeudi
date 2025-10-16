@@ -3,15 +3,15 @@
 - Créer au plan de tests contenant au moins 5 cas de tests **DIFFÉRENTS/VARIÉS**.
 - Créer les tests unitaires pour tous les cas de tests.
 
-|                                 |           |                           |
-|---------------------------------|-----------|---------------------------|
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
+| Liste_mots                                 | Résultat attendu |                                                                            |
+|--------------------------------------------|------------------|----------------------------------------------------------------------------|
+| ["banane", "fraise", "chien", "framboise"] | "framboise"      |                                                                            |
+| ["banane", "fraise", "taille", "projet"]   | "banane"         | ca prend le prenier qui verifie dans la liste.                             |
+| [25, 42]                                   | None             |                                                                            |
+| []                                         | None             |                                                                            |
+| [76, "girafe", "poney", "montagne"]        | "Montagne        | Le programme skip tout les indices de la liste qui n'ont pas de caractere. |
+|                                            |                  |                                                                            |
+|                                            |                  |                                                                            |
 
 # Tests unitaires pour la fonction _pourcentage_mots_max_
 | **mots**                                     | **taille** | **Résultat attendu** | **Remarque ou Message affiché**                                      |
