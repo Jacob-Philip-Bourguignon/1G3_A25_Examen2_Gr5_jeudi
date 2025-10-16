@@ -14,11 +14,11 @@
 |                                            |                  |                                                                            |
 
 # Tests unitaires pour la fonction _pourcentage_mots_max_
-| **mots**                                     | **taille** | **Résultat attendu** | **Remarque ou Message affiché**                                      |
-|----------------------------------------------|------------|----------------------|----------------------------------------------------------------------|
-| ["poney", "girafe", "hippopotame", "chaton"] | 5          | 75.0                 |                                                                      |
-| ["éléphant", "hippopotame", "girafe"]        | 4          | 100.0                |                                                                      |
-| ["pamplemousse", 42, "cacahuète", None]      | 8          | 100.0                | "42" et None ignorés                                                 |
-| []                                           | 5          | None                 | "Impossible de calculer le pourcentage. Aucun élément valide."       |
-| ["chat", "chien", "rat"]                     | 5          | 0.0                  |                                                                      |
-| "chat"                                       | 3          | None                 | "Impossible de calculer le pourcentage. 'chat' n'est pas une liste." |
+| **mots**                                     | **taille** | **Résultat attendu** | **Remarque ou Message affiché**                                   |
+|----------------------------------------------|------------|----------------------|-------------------------------------------------------------------|
+| ["poney", "girafe", "hippopotame", "chaton"] | 5          | 75.0                 |                                                                   |
+| ["éléphant", "hippopotame", "girafe"]        | 4          | 100.0                |                                                                   |
+| ["pamplemousse", 42, "cacahuète", None]      | 8          | 100.0                | "42" et None ignorés                                              |
+| []                                           | 5          | None                 | "Impossible de calculer le pourcentage. Aucun élément valide."    |
+| ["chat", "chien", "rat"]                     | 5          | 0.0                  |                                                                   |
+| "7"                                          | 3          | None                 | "Impossible de calculer le pourcentage. '7' n'est pas une liste." |
