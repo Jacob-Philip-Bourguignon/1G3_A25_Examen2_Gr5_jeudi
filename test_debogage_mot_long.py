@@ -44,8 +44,8 @@ def test_pourcentage_mots_max_tous_superieur():
     Lorsque tous les mots présents dépassent la taille,
     le pourcentage retourné est 100%.
     """
-    mots = ["poney", "girafe", "hippopotame", "chaton"]
-    resultat = pourcentage_mots_max(mots, 1)
+    mots = ["éléphant", "hippopotame", "girafe"]
+    resultat = pourcentage_mots_max(mots, 4)
     assert resultat == 100.0
     # TODO: Complèter ce test unitaire.
 
@@ -68,9 +68,11 @@ def test_pourcentage_mots_max_tous_inferieur():
     plus petits que la taille, le pourcentage
     retourné est 0.0%.
     """
+    mots = ["chat", "chien", "rat"]
+    resultat = pourcentage_mots_max(mots, 5)
     # TODO: Ajouter le cas de test correspondant à la description
     #       au plan de tests et complèter ce test unitaire.
-    assert False
+    assert resultat == 0.0
 
 def test_pourcentage_mots_max_tous_inferieur():
     mots = 7

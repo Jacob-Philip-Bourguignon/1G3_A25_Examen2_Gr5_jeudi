@@ -38,14 +38,14 @@ def pourcentage_mots_max(mots, taille):
 
     # TODO: Corriger les bogues dans le code suivant les erreurs relevées par les tests unitaires de cette fonction.
     #       Indice : chaque mot valide mérite d’être compté, et seuls ceux qui sont suffisamment grands font grimper ton pourcentage !
-    #total_valide = 0
+    #total_valide = 0 #Pas necessaire pour le but du code.
     count_sup = 0
     for mot in mots:
         longueur = len(mot)
         if longueur > taille: #Erreur de logique : Quand la longueur est plus grande que la taille, on veut ajouter +1 au compteur.
             count_sup += 1 #Erreur de mathematique : Quand un mot est > len(mot) on veut ajouter +1 au compteur.
 
-    pourcentage = (count_sup / taille) * 100 #Erreur de logique : "total_valide" n'est pas necessaire
+    pourcentage = (count_sup / len(mots)) * 100 #Erreur de logique : "total_valide" n'est pas necessaire au but du code. On veut diviser par le montant total d'indice dans la liste.
     return round(pourcentage, 2)
 
 if __name__ == "__main__":
